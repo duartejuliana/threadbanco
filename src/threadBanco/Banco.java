@@ -25,7 +25,7 @@ public class Banco {
 	}
 	
 	//Método que chama as transferências. O synchronized garante que só entra uma Thread por vez
-	public synchronized void fazerTranscao (int codTransacao, int idConta, int quantidade) {
+	public synchronized void fazerTransacao (int codTransacao, int idConta, int quantidade) {
 		switch (codTransacao) {
 		case 1:
 			sacar(idConta, quantidade);
